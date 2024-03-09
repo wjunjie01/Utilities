@@ -37,7 +37,6 @@ class StringParserTest {
 
         //Expects the type and calls the function
         //Throwing the error it is looking for
-        assertThrows(InvalidStringInputException.class,
-                () -> sp.splitString(inputString, separator));
+        assertThrows(InvalidStringInputException.class, () -> sp.splitString(inputString, separator));
     }
 }
